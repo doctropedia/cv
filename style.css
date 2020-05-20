@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+@font-face {
+    font-family: baloo;
+    src: url(assets/baloo.ttf);
+  }
+
+  .active{
+      color: #969696;
+  }
+
+  #top{
+    padding-top: 0;
+    overflow: hidden;
+    background-color:#232323;
+    height: 704px;
+  }
+  .container{
+    padding: 0em 13em 0em 13em;
+  }
+  .inline_block{
+      display: inline-block;
+  }
+  .header{
+    padding: 2em 13em 2em 13em;
+      width: auto;
+      height: auto;
+  }
+  .header_menu{
+    padding-top: 1.5em;
+    padding-left: 0;
+    position: relative;
+    float: right;
+  }
+  a, .header_menu_button{
+      color: #5a5a5a;
+      font-family: "baloo";
+      display: inline-block;
+      padding-right: 1em;
+      font-size: 1.05em;
+  }
+  .user_img{
+      height: 72px;
+      width: 72px;
+      box-shadow: 0px 0px 24px rgba(0,0,0,0.6);
+  }
+  .circle {
+      border-radius: 100%;
+
+  }
+  .header_data{
+    padding-top: 72px;
+  }
+  .my_name{
+      font-size: 364%;
+      color: #5a5a5a;
+      font-family: "Sacramento";
+      text-shadow: 0px 0px 20px #0a0a0a;
+  }
+  .my_desc, .typed-text, .cursor{
+    color: #8d8d8d;
+    font-family: "baloo";
+    text-align: center;
+    padding: 1em 0;
+    font-size: 120%;
+    font-weight: 400;
+    text-shadow: 0px 0px 20px #0a0a0a;
+  }
+  h1,h2,h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  h2.im-ankit{
+    max-width: 400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 990;
+  }
+  h2.im-ankit span.my_name {
+    width: 100%;
+    display: inline-block;
+}
+.masthead-wrap{
+    margin: 0 auto;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    top: -200px;
+    -webkit-animation: fadeIn .5s ease-in-out;
+    -moz-transition: fadeIn .5s ease-in-out;
+    -o-transition: fadeIn .5s ease-in-out;
+    transition: fadeIn .5s ease-in-out;
+}
+
+.left-bird {
+    left: 6em;
+    bottom: 24em;
+    width: 64px;
+    background: url(assets/bird_1.svg) top left no-repeat;
+
+}
+.right-bird {
+    right: 5em;
+    top: 10em;
+    width: 45px;
+    background: url(assets/bird_2.svg) top left no-repeat;
+
+}
+.bird {
+    position: absolute;
+    height: 45px;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    z-index: 980;
+}
+
+#intro{
+    background-color: #f76160;
+    padding: 50px 0 55px 0;
+  }
+  
+.data{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+.my_img{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left: 32.5%;
+}
+.intro_title{
+    padding: 0.8em;
+    font-family: "baloo";
+    font-size: 2em;
+    color: #1e836c;
+}
+.description, .descr{
+    font-size: 1.1em;
+    font-weight: 300;
+    font-family: "arial_rpund";
+    color: black;
+}
+#freelancer{
+    background-color: #31355b;
+    padding: 50px 0 55px 0;
+    
+}
+.intro_title_h2{
+    padding: 0.1em 0 0.8em 0;
+    font-family: "baloo";
+    font-size: 1.5em;
+    color: #1e836c;
+}
+.btn{
+    margin: 20px;
+    width: 200px;
+    padding: 10px;
+    background-color: #289455;
+    color: #017746;
+
+}
+.main-btn{
+    color: #026139;
+
+}
+footer{
+    background-color: #232323;
+    width: 100%;
+    height: 200px;
+}
+.social{
+    font-size: 30px;
+    padding: 20px;
+    color: #8d8d8d;
+}
+#education{
+    background-color: #ff9999;
+    padding: 50px 0 55px 0;
+}
+.education_img{
+    height: 200px;
+    width: 200px;
+    font-size: 200px;
+    color: #ff4343;
+    position: relative;
+    left: 39%;
+}
+#project{
+    background-color: #9233be;
+    padding: 50px 0 55px 0;
+}
+.project_img{
+    height: 200px;
+    width: 200px;
+    font-size: 200px;
+    color: #b519fd;
+    position: relative;
+    left: 37%;
+}
+#skills{
+    background-color: #f76160;
+    padding: 50px 0 55px 0;
+}
+tr,td{
+    padding: 10px;
+    color: white;
+    text-align: left;
+}
+#Doctropedia{
+    background-color: #31355b;
+    padding: 50px 0 55px 0;
+}
+#Hindisaahitya{
+    background-color: #f76160;
+    padding: 50px 0 55px 0;
+}
+
+  @font-face {
+    font-family: Sacramento;
+    src: url(assets/Sacramento-Regular.ttf);
+  }
+  @font-face {
+    font-family: PoiretOne;
+    src: url(assets/PoiretOne-Regular.ttf);
+  }
+  @font-face {
+    font-family: arial_rpund;
+    src: url(assets/arial_rpund.ttf);
+  }
+

@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Resume</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="assets/code_flat_icon_by_foxinflame-d9bkady.png" type="image/gif" sizes="16x16">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    </head>
+    <body>
+       <section id="top" >
+            <header class="header">
+                <div class="user_img circle inline_block">
+                    <img class="user_img circle" src="assets/me.jpg" alt="header_img">
+                </div>
+
+                <menu class="header_menu">
+                    <ul>
+                        <li class="header_menu_button"><a class="active" href="#">Bio </a></li>
+                        <li class="header_menu_button"><a href="about.html">Resume </a></li>
+                        </ul>
+                </menu>
+            </header>
+            <div class="transistion bird left-bird"></div>
+            <div class="transistion bird right-bird"></div>
+            <div id="head-slider" class="transistion">
+                    <div class="header_data">
+                        <h2 class="im-ankit">
+                            <span class="my_name">
+                                I'm Ankit .
+                            </span>
+                        </h2>
+                        <p class="my_desc">a <span class="typed-text"></span><span class="cursor">&nbsp;|</span></p>
+                    </div>
+            </div>
+            <div class="masthead-wrap">
+                <img src="assets/background.svg">
+            </div>
+            </div>
+       </section>
+       <section id="intro">
+           <div class="container">
+               <div class="data">
+                   <div class="my_img">
+                       <img class="circle my_img" src="assets/me.jpg" alt="Hello">
+                   </div>
+                   <div class="intro_title">
+                       <span>Hola!</span>
+                   </div>
+                   <div class="description">
+                       <p class="descr">
+                        I'm a Web Developer / Designer based in Rudrapur, India.<br>I have a passion for web development and love to create<br> for web and mobile devices.
+                       </p>
+                   </div>
+               </div>
+            </div>
+       </section>
+       <section id="freelancer">
+        <div class="container">
+            <div class="data">
+                <div class="my_img">
+                    <img class="circle my_img" src="assets/call-me-maybe.gif" alt="Hello">
+                </div>
+                <div class="intro_title">
+                    <span>I'm available.</span>
+                </div>
+                <div class="intro_title_h2">
+                    <span>I’m currently available for freelance work.</span>
+                </div>
+                <div class="description">
+                    <p style="color: white;" class="descr">
+                        Want to hire me for your beautifull project, then get in touch.
+                     </p>
+                </div><center>
+                <p class="btn">
+                    <a href="mailto:ankit.sagar.me@gmail.com" class="main-btn">Contact me <i class="fas fa-envelope"></i></a>
+                </p></center>
+            </div>
+         
+       </section>
+       <footer>
+           <center>
+               <div class="social inline_block">
+                    <a href="https://www.instagram.com/woinbofficial/"><i class="fab fa-instagram"></i></a>
+               </div>
+               <div class="social inline_block">
+                <a href="https://in.linkedin.com/in/ankit-sagar-a10a8a171"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="social inline_block">
+                    <a href="https://twitter.com/woinbo"><i class="fab fa-twitter"></i></a>
+                   </div>
+                <div class="social inline_block">
+                 <a href="tel:+918445377229"><i class="fas fa-phone"></i></a>
+                </div>
+
+                <div class="rights">
+                    <span style="color:#727272">© 2020 Ankit sagar. All rights reserved.</span>
+
+                </div>
+
+
+
+
+           </center>
+
+
+
+
+
+
+
+
+       </footer>
+
+    </body> 
+
+
+
+    <script>
+      const typedTextSpan = document.querySelector(".typed-text");
+const cursorSpan = document.querySelector(".cursor");
+
+const textArray = ["Developer", "Designer", "Freelancer"];
+const typingDelay = 200;
+const erasingDelay = 100;
+const newTextDelay = 2000; // Delay between current and next text
+let textArrayIndex = 0;
+let charIndex = 0;
+
+function type() {
+  if (charIndex < textArray[textArrayIndex].length) {
+    if (!cursorSpan.classList.contains("typing"))
+      cursorSpan.classList.add("typing");
+    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingDelay);
+  } else {
+    cursorSpan.classList.remove("typing");
+    setTimeout(erase, newTextDelay);
+  }
+}
+
+function erase() {
+  if (charIndex > 0) {
+    if (!cursorSpan.classList.contains("typing"))
+      cursorSpan.classList.add("typing");
+    typedTextSpan.textContent = textArray[textArrayIndex].substring(
+      0,
+      charIndex - 1
+    );
+    charIndex--;
+    setTimeout(erase, erasingDelay);
+  } else {
+    cursorSpan.classList.remove("typing");
+    textArrayIndex++;
+    if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+    setTimeout(type, typingDelay + 1100);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  // On DOM Load initiate the effect
+  if (textArray.length) setTimeout(type, newTextDelay + 250);
+});
+
+      </script>
+      </html>
